@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd /opt/ANDRAX/singularity
+
+/opt/ANDRAX/singularity/singularity-server "$@"

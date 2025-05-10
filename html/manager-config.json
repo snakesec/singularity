@@ -1,0 +1,55 @@
+{
+    "attackHostDomain": "d.rebind.it",
+    "attackHostIPAddress": "xxx.xxx.xxx.xxx",
+    "targetHostIPAddress": "127.0.0.1",
+    "dummyPort": 4000,
+    "interval": 20,
+    "rebindingStrategy": "fs",
+    "attackMethod": "fetch",
+    "flushDns": false,
+    "wsProxyPort": 3129,
+    "indexToken": "thisismytesttoken",
+    "attackPayloads": [{
+        "name": "Simple Fetch Get",
+        "ports": []
+    }, {
+        "name": "Ollama Llama2 Exfil",
+        "ports": [11434]
+    }, {
+        "name": "Hook and Control",
+        "ports": []
+    }, {
+        "name": "automatic",
+        "ports": []
+    }, {
+        "name": "Chrome DevTools RCE",
+        "ports": [9333]
+    }, {
+        "name": "Etcd k/v dump",
+        "ports": [2379]
+    }, {
+        "name": "pyethapp",
+        "ports": [4000]
+    }, {
+        "name": "Rails Console RCE",
+        "ports": [3000]
+    }, {
+        "name": "AWS Metadata Exfil",
+        "ports": [80]
+    }, {
+        "name": "Duplicati RCE",
+        "ports": [8200]
+    }, {
+        "name": "WebPDB RCE",
+        "ports": []
+    }, {
+        "name": "Docker API",
+        "ports": [2376]
+    }, {
+        "name": "Jenkins Script Console",
+        "ports": [8080]
+    }, {
+        "name": "H2 Log4Shell RCE",
+        "ports": [8082]
+    }]
+}
